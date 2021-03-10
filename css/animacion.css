@@ -1,11 +1,14 @@
+
 @keyframes animacion_test{
     from{
-        background-color: red;
+        background-color: rgb(127, 241, 74);
     }
     to{
-        background-color: yellow;
+        background-color: rgb(160, 39, 197);
     }
 }
+
+
 
 @keyframes girar{
     from{
@@ -15,6 +18,8 @@
         transform: rotate(360deg);
     }
 }
+
+
 
 @keyframes label-animation{
     from{
@@ -29,7 +34,7 @@
 
 .container-label{
     
-    width: 100%;
+    width:100%;
     padding: 1rem;
     box-sizing: border-box;
 }
@@ -37,13 +42,14 @@
 .label{
     width: 64px;
     background-color: rgb(60, 189, 85);
-    color: white;
+    color:white;
     font-size: 1.3rem;
     padding: 1rem;
     border-radius: 20px;
     text-align: center;
+    /*aqui va la animacion*/
     animation-name: label-animation;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -61,21 +67,21 @@
 .loader-double{
     width: 64px;
     height: 64px;
-    border: 16px solid rgb(80, 2, 220);
+    border: 16px solid rgb(30, 230, 220);
     border-top: 16px solid rgb(250, 50, 100);
-    border-bottom: 16px solid rgb(45, 45, 70);
+    border-bottom: 16px solid rgb(45, 45, 20);
     border-radius: 50%;
-    animation: girar 2s ease-in-out infinite
+    animation: girar 2s ease-in-out infinite;
 }
 
 .animada{
     width: 100%;
     background-color: red;
-    color: white;
+    color:white;
     text-align: center;
     height: 200px;
     display:inline-block;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     animation-name: animacion_test;
     animation-duration: 2s;
